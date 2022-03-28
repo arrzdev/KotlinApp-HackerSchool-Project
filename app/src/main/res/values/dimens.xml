@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_margin_top">14dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="view_size">200dp</dimen>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Welcome!"
+        android:textColor="@color/dark_blue"
+        android:textSize="55dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="5dp"
+
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_menu" />
+
+    <EditText
+        android:id="@+id/gender_input"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:hint="Gender"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_gender"
+        android:drawablePadding="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <EditText
+        android:id="@+id/curso_input"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:hint="Curso"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_course"
+        android:drawablePadding="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_input" />
+
+
+    <Button
+        android:id="@+id/btn_date_picker"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="Birthday"
+        android:textSize="20dp"
+
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableTint="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curso_input" />
+
+    <TextView
+        android:id="@+id/textview_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_go"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_date_picker"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="266dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="72dp"
+        android:text="Let's Go!!"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

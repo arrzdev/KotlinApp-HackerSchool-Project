@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Have Fun! "
+        android:textSize="55dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_color"
+        android:layout_width="@dimen/view_size"
+        android:layout_height="@dimen/view_size"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:background="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_greeting" />
+
+    <TextView
+        android:id="@+id/textView_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Red - 0"
+
+        app:layout_constraintStart_toStartOf="@+id/seekBar_red"
+        app:layout_constraintTop_toBottomOf="@+id/view_color" />
+
+    <SeekBar
+        android:id="@+id/seekBar_red"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:max="255"
+        android:thumbTint="@color/red"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_red" />
+
+
+    <TextView
+        android:id="@+id/textView_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Green - 0"
+
+        app:layout_constraintStart_toStartOf="@+id/seekBar_green"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_red" />
+
+    <SeekBar
+        android:id="@+id/seekBar_green"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:max="255"
+        android:thumbTint="@color/green"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_green" />
+
+
+    <TextView
+        android:id="@+id/textView_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Blue - 0"
+
+        app:layout_constraintStart_toStartOf="@+id/seekBar_blue"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_green" />
+
+    <SeekBar
+        android:id="@+id/seekBar_blue"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:max="255"
+        android:thumbTint="@color/blue"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_blue"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
